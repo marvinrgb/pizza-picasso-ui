@@ -1,68 +1,145 @@
 export function MenuSection() {
   const menuSections = [
     {
-      title: "Antipasti",
-      items: [
-        { name: "Bruschetta della Casa", description: "Geröstetes Brot mit frischen Tomaten, Basilikum und Knoblauch", price: "8,50" },
-        { name: "Antipasto Misto", description: "Auswahl italienischer Vorspeisen mit Schinken, Salami, Käse und Oliven", price: "14,90" },
-        { name: "Caprese", description: "Büffelmozzarella mit Tomaten und frischem Basilikum", price: "11,50" },
-        { name: "Carpaccio di Manzo", description: "Hauchdünn geschnittenes Rindfleisch mit Rucola und Parmesan", price: "13,90" }
-      ]
-    },
-    {
-      title: "Insalate",
-      items: [
-        { name: "Insalata Mista", description: "Gemischter Salat mit Hausdressing", price: "7,90" },
-        { name: "Insalata Rucola", description: "Rucola mit Cherrytomaten, Pinienkernen und Parmesan", price: "9,50" },
-        { name: "Insalata di Pollo", description: "Salat mit gegrillter Hähnchenbrust und Balsamico-Dressing", price: "12,90" }
-      ]
-    },
-    {
       title: "Pizza",
-      highlight: true,
       items: [
-        { name: "Pizza Margherita", description: "Tomaten, Mozzarella, Basilikum", price: "9,50", specialty: true },
-        { name: "Pizza Picasso", description: "Unsere Hausspezialität mit Prosciutto, Rucola und Büffelmozzarella", price: "14,90", specialty: true },
-        { name: "Pizza Quattro Stagioni", description: "Tomaten, Mozzarella, Schinken, Salami, Champignons, Artischocken", price: "13,50" },
-        { name: "Pizza Diavola", description: "Tomaten, Mozzarella, scharfe Salami, Chili", price: "12,90" },
-        { name: "Pizza Vegetariana", description: "Tomaten, Mozzarella, gegrilltes Gemüse, Paprika, Zucchini", price: "11,90" },
-        { name: "Pizza Quattro Formaggi", description: "Vier italienische Käsesorten ohne Tomaten", price: "13,90" },
-        { name: "Pizza Marinara", description: "Tomaten, Knoblauch, Oregano, Olivenöl (ohne Käse)", price: "8,50" }
+        { name: "Pizza magherita", description: "Tomatensoße Käse", price: "7,50" },
+        { name: "Pizza prosciutto", description: "Tomatensoße, Käse, Vorderschinken", price: "9,00" },
+        { name: "Pizza salami", description: "Tomatensoße, Käse, Salami", price: "9,00" },
+        { name: "Pizza funghi", description: "Tomatensoße, Käse, frische Champignons", price: "8,50" },
+        { name: "Pizza primavera", description: "Tomatensoße, Käse, frische Tomatenscheiben, Ruccola, Grana Padano Käse", price: "12,00" },
+        { name: "Pizza 4 stagioni", description: "Tomatensoße, Käse, Vorderschinken Champignons, Salami, Paprika", price: "10,00" },
+        { name: "Pizza caprese", description: "frische Tomaten, Mozzarella, Basilikum", price: "10,50" },
+        { name: "Pizza veneto", description: "Tomatensoße, Käse, Vorderschinken Salami, Peperoniwurst", price: "12,50" },
+        { name: "Pizza diavolo", description: "Tomatensoße, Käse, Peperoni, Paprika Peperonischote(scharf)", price: "10,00" },
+        { name: "Pizza capricciosa", description: "Tomatensoße, Käse, Vorderschinken, Peperoniwurst, Champignons, Artischocken, Zwiebeln", price: "11,50" },
+        { name: "Pizza gamberetti", description: "Tomatensoße, Käse, Gamberetti, Knoblauch", price: "11,50" },
+        { name: "Pizza tonno cipolla", description: "Tomatensoße, Käse, Thunfisch, Zwiebeln", price: "10,50" },
+        { name: "Pizza vegetariana", description: "Tomatensoße, Mozzarella, frisches Gemüse", price: "11,50" },
+        { name: "Pizza spinaci", description: "Tomatensoße, Käse, Spinat, Knoblauch, Tomatensoße", price: "10,00" },
+        { name: "Pizza frutti di mare", description: "Tomatensoße, Käse, Meeresfrüchte, Knoblauch", price: "12,00" },
+        { name: "Pizza con salmone", description: "Tomatensoße, Käse, Wildlachs, Zwiebeln, Knoblauch", price: "12,50" },
+        { name: "Pizza Picasso", description: "Tomatensoße, Mozzarella, Ruccola, Bresaola, Zwiebeln, Balsamico", price: "14,00" },
+        { name: "Pizza hawaii", description: "Tomatensoße, Käse, Ananas, Vorderschinken", price: "10,50" },
+        { name: "Pizza calzone", description: "Tomatensoße, Käse, Vorderschinken, Peperoniwurst, Champignons, Mozzarella, Zwiebeln", price: "11,00" },
+        { name: "Pizza Rimini", description: "Tomatensoße, Käse, Vorderschinken, Salami, Spinat, Mozzarella, Knoblauch", price: "12,50" },
+        { name: "Pizzaccia", description: "Pizzabrot", price: "5,50" },
       ]
     },
     {
-      title: "Pasta",
+      title: "Vorspeisen",
       items: [
-        { name: "Spaghetti Carbonara", description: "Mit Speck, Ei und Parmesan", price: "11,90", specialty: true },
-        { name: "Penne all'Arrabbiata", description: "Mit scharfer Tomatensauce und Chili", price: "10,50" },
-        { name: "Tagliatelle ai Porcini", description: "Bandnudeln mit Steinpilzen in Sahnesauce", price: "13,90" },
-        { name: "Lasagne della Casa", description: "Hausgemachte Lasagne mit Hackfleisch und Béchamel", price: "12,50" },
-        { name: "Risotto ai Funghi", description: "Cremiger Risotto mit gemischten Pilzen", price: "12,90" }
+        { name: "Mozzarella alla caprese", description: "Mozzarella mit Tomatenscheiben, frischem Basilikum und Olivenöl extra vergine", price: "8,00" },
+        { name: "Gamberetti al Forno", description: "Gamberetti in Tomaten-Kräutersoße mit Knoblauch, frischen Kräuter in Olivenöl überbacken", price: "13,50" },
+        { name: "Pecorino gratinato", description: "gebackener Schafskäse mit Cherry-Tomaten Oliven und Zwiebeln", price: "9,00" },
+        { name: "Funghi-Pecorino", description: "gefüllte Champignons mit Schafskäse, frischen Kräutern in einer leichten Tomatensoße überbacken", price: "10,50" },
+        { name: "Bruschette", description: "mit Tomaten Olivenöl extra vergine, frischen Kräutern und Knoblauch", price: "6,00" },
+        { name: "Mozzarella in carrozza", description: "Mozzarella-Scheiben, paniert und frittiert mit Birne und Preiselbeeren", price: "9,00" },
+        { name: "Insalata di mare", description: "Meeresfrüchtesalat mit Zitrone, Knoblauch, Olivenöl extra vergine und frischen Kräutern", price: "12,00" },
+        { name: "Zuppa di pomodoro", description: "Tomatensuppe mit Sahne und frischem Basilikum", price: "6,00" },
       ]
     },
     {
-      title: "Carne",
+      title: "Salate",
       items: [
-        { name: "Saltimbocca alla Romana", description: "Kalbsschnitzel mit Prosciutto und Salbei", price: "18,90" },
-        { name: "Bistecca alla Griglia", description: "Gegrilltes Rindersteak mit Rosmarin", price: "22,50" },
-        { name: "Pollo alla Parmigiana", description: "Hähnchenbrust überbacken mit Parmesan", price: "16,90" }
+        { name: "Beilagensalat", description: "gemischter Salat mit Tomaten und Gurken", price: "4,00" },
+        { name: "Insalata Pollo e Melone", description: "gemischter Salat mit Hähnchenbruststreifen Mais, Champignons, Scheibletten und Melone", price: "12,50" },
+        { name: "Insalata ruccola", description: "Ruccolasalat, Cherry-Tomaten, Grana Padano Käse und Essig-Öl", price: "8,50" },
+        { name: "Insalata mista", description: "gemischter Salat mit Tomaten und Gurken", price: "6,50" },
+        { name: "Insalata di Pesce", description: "Gemischter Salat mit Lachs, Gamberetti und Coctailsoße in Honig Senf Soße", price: "14,00" },
+        { name: "Insalata chef", description: "gemischter Salat mit Hähnchenbrustfilet, roten Zwiebeln, gebratenen Champignons, Mozzarella und Hausdressing", price: "13,00" },
+        { name: "Insalata Italia", description: "gemischter Salat mit Käse, Vorderschinken und Ei", price: "9,50" },
+        { name: "Insalata capricciosa", description: "gemischter Salat mit Käse, Vorderschinken, Ei, Thunfisch und Artischocken", price: "11,00" },
+        { name: "Insalata Picasso", description: "gemischter Salat mit Rinderfiletstreifen, frische Champignons, Essig-Öl", price: "13,00" },
+        { name: "Insalata pecorino", description: "gemischter Salat mit Schafskäse, Oliven, Zwiebeln, Peperoni, Essig-Öl", price: "10,50" },
       ]
     },
     {
-      title: "Pesce",
+      title: "Nudelgerichte",
       items: [
-        { name: "Branzino al Sale", description: "Wolfsbarsch in der Salzkruste", price: "19,90" },
-        { name: "Salmone alla Griglia", description: "Gegrillter Lachs mit Zitronenbutter", price: "17,50" },
-        { name: "Frutti di Mare", description: "Meeresfrüchte in Weißweinsauce", price: "21,90" }
+        { name: "Spaghetti pomodoro", description: "mit Tomatensoße und frischem Basilikum", price: "8,50" },
+        { name: "Spaghetti bolognese", description: "mit Hackfleischsoße", price: "9,50" },
+        { name: "Spaghetti carbonara", description: "mit Vorderschinken, Sahne, Käse, schwarzem Pfeffer und Ei", price: "10,00" },
+        { name: "Spaghetti frutti di mare", description: "mit Meeresfrüchten, Knoblauch und frischer Tomatensoße", price: "11,50" },
+        { name: "Spaghetti gambero rosso", description: "mit Garnelen, Knoblauch, frischen Tomaten, Ruccola, Grana Padano Käse", price: "13,50" },
+        { name: "Penne bella donna", description: "mit Hähnchenbrustfilet, Champignons, Paprika in Sahnesoße", price: "12,50" },
+        { name: "Spaghetti aglio olio e peperoncino", description: "mit Olivenöl, frischen Kräutern, Knoblauch, scharf", price: "9,50" },
+        { name: "Tagliatelle salmone", description: "mit Wildlachs, Tomatensahnesoße, Ruccola, Grana Padano Käse", price: "12,50" },
+        { name: "Spaghetti Picasso", description: "mit Filetspitzen, Champignons und Sahnesoße", price: "13,00" },
+        { name: "Penne all'arrabbiata", description: "mit Speck, Knoblauch, Tomatensoße, Paprika, Peperoni", price: "10,00" },
+        { name: "Tortellini panna", description: "gefüllte Nudeltaschen mit Vorderschinken, Sahnesoße", price: "10,50" },
+        { name: "Tagliatelle verde e rosa", description: "mit epienatierten Penne, frischen Kräutern, Ruccola, Grana Padano Käse", price: "12,00" },
+        { name: "Gnocchi Sorrento", description: "Kartoffelnocken mit Tomatensoße, Mozzarella, Basilikum", price: "11,50" },
+        { name: "Gnocchi spinaci", description: "Kartoffelnocken mit Sahnesoße, Spinat, Vorderschinken", price: "11,00" },
       ]
     },
     {
-      title: "Dolci",
+      title: "Überbacken",
       items: [
-        { name: "Tiramisu", description: "Das klassische italienische Dessert", price: "6,50", specialty: true },
-        { name: "Panna Cotta", description: "Mit Beerensauce", price: "5,90" },
-        { name: "Gelato della Casa", description: "Hausgemachtes Eis (3 Kugeln)", price: "4,50" },
-        { name: "Cannoli Siciliani", description: "Sizilianische Röllchen mit Ricotta-Füllung", price: "6,90" }
+        { name: "Lasagne al forno", description: "Lasagne nach Art des Hauses", price: "9,00" },
+        { name: "Penne Mare e Monte", description: "mit Lachs, Spinat in einer Sahne-Hollandaise Knoblauch Soße", price: "14,50" },
+        { name: "Tris di pasta", description: "drei verschiedene Nudelsorten mit Hackfleischsoße und Käse überbacken", price: "11,50" },
+      ]
+    },
+    {
+      title: "Fleischgerichte",
+      items: [
+        { name: "Cotoletta alla milanese", description: "Schnitzel Wiener Art", price: "13,50" },
+        { name: "Cotoletta ai funghi", description: "Schnitzel mit frischer Champignon-Rahmsoße", price: "15,00" },
+        { name: "Cotoletta alla zingara", description: "Schnitzel mit Paprika, Zwiebeln, frischen Champignons und Tomatensoße", price: "15,00" },
+        { name: "Cotoletta con cipolle", description: "Schnitzel mit Zwiebeln und Rahmsoße", price: "15,00" },
+        { name: "Cotoletta alla bolognese", description: "Schnitzel mit Bolognesesoße, Vorderschinken und Käse überbacken", price: "15,00" },
+        { name: "Saltimbocca alla romana", description: "Schweinemedaillons mit Parmaschinken, Salbei und Weißweinsoße", price: "18,00" },
+        { name: "Scaloppine ai funghi", description: "Schweinemedaillons mit frischen Champignons und Sahnesoße", price: "17,50" },
+        { name: "Filetto di maiale alla napoli", description: "Schweinefilet mit frischen Tomaten, frischem Basilikum und Mozzarella überbacken", price: "18,00" },
+        { name: "Filetto di maiale al pepe verde", description: "Schweinefilet mit Grüner-Pfeffer-Sahnesoße", price: "18,00" },
+        { name: "Filetto di maiale alla cacciatora", description: "Schweinefilet mit frischen Champignons, Zwiebeln, Speck und Sahne", price: "18,00" },
+        { name: "Doppelt Sauce", description: "", price: "2,50" },
+      ]
+    },
+    {
+      title: "Fisch",
+      items: [
+        { name: "Calamari fritti", description: "Tintenfisch, frittiert mit Remouladen-Soße", price: "15,50" },
+        { name: "Salmone al senape", description: "Lachsfilet in Senfsahnesoße mit frischen Kräutern", price: "23,50" },
+      ]
+    },
+    {
+      title: "Hähnchen",
+      items: [
+        { name: "Petto di pollo alla griglia", description: "gegrilltes Hähnchenbrustfilet mit Kräuterbutter", price: "14,50" },
+        { name: "Petto di pollo trifolato", description: "gegrilltes Hähnchenbrustfilet mit gebratenen Champignons und Zwiebeln", price: "17,00" },
+        { name: "Petto di pollo alla diavola", description: "gebratenes Hähnchenbrustfilet mit Erbsen, Champignons und scharfer Tomatensoße", price: "17,00" },
+      ]
+    },
+    {
+      title: "Nachtisch",
+      items: [
+        { name: "Tiramisù", description: "", price: "7,00" },
+        { name: "Pannacotta", description: "", price: "7,00" },
+        { name: "Tartufo", description: "", price: "7,00" },
+        { name: "Cassata", description: "", price: "7,00" },
+      ]
+    },
+    {
+      title: "Beilagen",
+      items: [
+        { name: "Pommes, Rösti oder Kroketten", description: "", price: "5,00" },
+      ]
+    },
+    {
+      title: "Getränke",
+      items: [
+        { name: "Cola, Fanta, Sprite, Light, Zero", description: "1 Liter inkl. Pfand", price: "4,00" },
+      ]
+    },
+    {
+      title: "Pizzablech für Ihre Party",
+      items: [
+        { name: "40 x 60 cm für 4 Personen", description: "belegt mit Tomatensoße und Käse", price: "20,00" },
+        { name: "Alle weiteren Zutaten gegen Aufpreis", description: "Zwiebeln, Mais, Peperoni, Knoblauch", price: "5,00" },
+        { name: "Frische Champignons, frische Tomaten, Ruccola, Broccoli, Blumenkohl, Spinat, Schinken, Salami, Peperoniwurst, Mozzarella, Käse, Ananas, Paprika, Kapern", description: "", price: "5,00" },
+        { name: "Gorgonzola, Schafskäse, Thunfisch, frisches Gemüse (Auberginen, Zucchini, Paprika), Parmaschinken, Bresaola, Rinderfiletstreifen, Hähnchenbrustfilet, Lachs, Shrimps, Meeresfrüchte", description: "", price: "6,00" },
       ]
     }
   ];
