@@ -131,24 +131,6 @@ export function ContactSection() {
               </div>
             </div>
 
-            {/* Directions */}
-            <div className="mt-6 space-y-4">
-              <div>
-                <h4 className="font-medium text-foreground mb-2">Mit öffentlichen Verkehrsmitteln:</h4>
-                <p className="text-sm text-foreground/70">
-                  U-Bahn Station "Musterplatz" (3 Minuten zu Fuß)<br />
-                  Bus Linie 42, Haltestelle "Musterstraße" (1 Minute zu Fuß)
-                </p>
-              </div>
-              
-              <div>
-                <h4 className="font-medium text-foreground mb-2">Mit dem Auto:</h4>
-                <p className="text-sm text-foreground/70">
-                  Parkplätze in der Musterstraße und den umliegenden Seitenstraßen verfügbar.
-                  Parken kostenpflichtig Mo-Sa 9-19 Uhr.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
