@@ -1,12 +1,12 @@
 export function ContactSection() {
   const openingHours = [
-    { day: "Montag", hours: "Ruhetag", closed: true },
-    { day: "Dienstag", hours: "17:30 - 22:00 Uhr" },
-    { day: "Mittwoch", hours: "17:30 - 22:00 Uhr" },
-    { day: "Donnerstag", hours: "17:30 - 22:00 Uhr" },
-    { day: "Freitag", hours: "17:30 - 22:30 Uhr" },
-    { day: "Samstag", hours: "17:30 - 22:30 Uhr" },
-    { day: "Sonntag", hours: "17:30 - 22:00 Uhr" }
+    { day: "Montag", hours: "Geschlossen", closed: true },
+    { day: "Dienstag", hours: "11:30–13:30, 17:00–21:00" },
+    { day: "Mittwoch", hours: "11:30–13:30, 17:00–21:00" },
+    { day: "Donnerstag", hours: "11:30–13:30, 17:00–21:00" },
+    { day: "Freitag", hours: "11:30–13:30, 17:00–21:00" },
+    { day: "Samstag", hours: "11:30–13:30, 17:00–21:00" },
+    { day: "Sonntag", hours: "11:30–13:30, 17:00–21:00" }
   ];
 
   return (
@@ -39,10 +39,8 @@ export function ContactSection() {
                 <div>
                   <h3 className="text-lg font-medium text-foreground mb-2">Adresse</h3>
                   <p className="text-foreground/70">
-                    Pizzeria Picasso<br />
-                    Musterstraße 123<br />
-                    12345 Musterstadt<br />
-                    Deutschland
+                    Konrad-Adenauer-Straße 2<br />
+                    35745 Herborn
                   </p>
                 </div>
               </div>
@@ -63,8 +61,8 @@ export function ContactSection() {
                   <div className="space-y-1">
                     <p>
                       <span className="text-foreground/70">Telefon: </span>
-                      <a href="tel:+49123456789" className="text-secondary hover:text-secondary/80 transition-colors">
-                        +49 (0) 123 456 789
+                      <a href="tel:02772571566" className="text-secondary hover:text-secondary/80 transition-colors">
+                        02772 571566
                       </a>
                     </p>
                     <p>
@@ -115,42 +113,19 @@ export function ContactSection() {
           <div className="bg-white rounded-lg shadow-sm p-6">
             <h3 className="text-lg font-medium text-foreground mb-4">Anfahrt</h3>
             
-            {/* Google Maps Placeholder */}
-            <div className="aspect-w-16 aspect-h-12 bg-muted/50 rounded-lg overflow-hidden">
-              <div className="w-full h-96 bg-gradient-to-br from-muted/30 to-muted/60 flex items-center justify-center">
-                <div className="text-center space-y-3">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-                    <svg className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-foreground">Google Maps</h4>
-                    <p className="text-sm text-foreground/60">Interaktive Karte wird hier angezeigt</p>
-                  </div>
-                </div>
-              </div>
+            {/* Google Maps Embed */}
+            <div className="h-[450px] bg-muted/50 rounded-lg overflow-hidden">
+              <iframe
+                src="https://maps.google.com/maps?q=Konrad-Adenauer-Stra%C3%9Fe%202%2C%2035745%20Herborn&z=15&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
 
-            {/* Directions */}
-            <div className="mt-6 space-y-4">
-              <div>
-                <h4 className="font-medium text-foreground mb-2">Mit öffentlichen Verkehrsmitteln:</h4>
-                <p className="text-sm text-foreground/70">
-                  U-Bahn Station "Musterplatz" (3 Minuten zu Fuß)<br />
-                  Bus Linie 42, Haltestelle "Musterstraße" (1 Minute zu Fuß)
-                </p>
-              </div>
-              
-              <div>
-                <h4 className="font-medium text-foreground mb-2">Mit dem Auto:</h4>
-                <p className="text-sm text-foreground/70">
-                  Parkplätze in der Musterstraße und den umliegenden Seitenstraßen verfügbar.
-                  Parken kostenpflichtig Mo-Sa 9-19 Uhr.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
