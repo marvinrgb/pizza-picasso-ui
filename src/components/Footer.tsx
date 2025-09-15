@@ -6,10 +6,6 @@ export function Footer() {
           {/* Restaurant Info */}
           <div>
             <h3 className="text-xl font-serif text-primary-foreground mb-4">Pizzeria Picasso</h3>
-            <p className="text-white/80 text-sm leading-relaxed">
-              Seit über drei Generationen servieren wir authentische italienische Küche 
-              mit Leidenschaft und Tradition. Benvenuti alla famiglia!
-            </p>
           </div>
 
           {/* Quick Links */}
@@ -25,17 +21,6 @@ export function Footer() {
                   className="text-white/80 hover:text-primary-foreground transition-colors duration-200 text-sm"
                 >
                   Speisekarte
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => {
-                    const element = document.getElementById('impressionen');
-                    element?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="text-white/80 hover:text-primary-foreground transition-colors duration-200 text-sm"
-                >
-                  Impressionen
                 </button>
               </li>
               <li>
@@ -57,12 +42,12 @@ export function Footer() {
             <h4 className="font-medium text-primary-foreground mb-4">Kontakt</h4>
             <div className="space-y-2 text-sm">
               <p className="text-white/80">
-                Musterstraße 123<br />
-                12345 Musterstadt
+                Konrad-Adenauer-Straße 2<br />
+                35745 Herborn
               </p>
               <p className="text-white/80">
-                <a href="tel:+49123456789" className="hover:text-primary-foreground transition-colors">
-                  +49 (0) 123 456 789
+                <a href="tel:02772571566" className="hover:text-primary-foreground transition-colors">
+                  02772 571566
                 </a>
               </p>
               <p className="text-white/80">
