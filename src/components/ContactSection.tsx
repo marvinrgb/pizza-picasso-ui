@@ -113,22 +113,17 @@ export function ContactSection() {
           <div className="bg-white rounded-lg shadow-sm p-6">
             <h3 className="text-lg font-medium text-foreground mb-4">Anfahrt</h3>
             
-            {/* Google Maps Placeholder */}
+            {/* Google Maps Embed */}
             <div className="aspect-w-16 aspect-h-12 bg-muted/50 rounded-lg overflow-hidden">
-              <div className="w-full h-96 bg-gradient-to-br from-muted/30 to-muted/60 flex items-center justify-center">
-                <div className="text-center space-y-3">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-                    <svg className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-foreground">Google Maps</h4>
-                    <p className="text-sm text-foreground/60">Interaktive Karte wird hier angezeigt</p>
-                  </div>
-                </div>
-              </div>
+              <iframe
+                src="https://maps.google.com/maps?q=Konrad-Adenauer-Stra%C3%9Fe%202%2C%2035745%20Herborn&z=15&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
 
           </div>
