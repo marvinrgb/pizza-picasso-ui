@@ -114,7 +114,7 @@ export function ContactSection() {
             <h3 className="text-lg font-medium text-foreground mb-4">Anfahrt</h3>
             
             {/* Google Maps Embed */}
-            <div className="aspect-w-16 aspect-h-12 bg-muted/50 rounded-lg overflow-hidden">
+            <div className="h-[450px] bg-muted/50 rounded-lg overflow-hidden">
               <iframe
                 src="https://maps.google.com/maps?q=Konrad-Adenauer-Stra%C3%9Fe%202%2C%2035745%20Herborn&z=15&output=embed"
                 width="100%"

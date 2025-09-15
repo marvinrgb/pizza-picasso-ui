@@ -27,12 +27,6 @@ export function Header() {
                   Speisekarte
                 </button>
                 <button
-                  onClick={() => scrollToSection('impressionen')}
-                  className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
-                >
-                  Impressionen
-                </button>
-                <button
                   onClick={() => scrollToSection('kontakt')}
                   className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
                 >
