@@ -1,12 +1,12 @@
 export function ContactSection() {
   const openingHours = [
-    { day: "Montag", hours: "Ruhetag", closed: true },
-    { day: "Dienstag", hours: "17:30 - 22:00 Uhr" },
-    { day: "Mittwoch", hours: "17:30 - 22:00 Uhr" },
-    { day: "Donnerstag", hours: "17:30 - 22:00 Uhr" },
-    { day: "Freitag", hours: "17:30 - 22:30 Uhr" },
-    { day: "Samstag", hours: "17:30 - 22:30 Uhr" },
-    { day: "Sonntag", hours: "17:30 - 22:00 Uhr" }
+    { day: "Montag", hours: "Geschlossen", closed: true },
+    { day: "Dienstag", hours: "11:30–13:30, 17:00–21:00" },
+    { day: "Mittwoch", hours: "11:30–13:30, 17:00–21:00" },
+    { day: "Donnerstag", hours: "11:30–13:30, 17:00–21:00" },
+    { day: "Freitag", hours: "11:30–13:30, 17:00–21:00" },
+    { day: "Samstag", hours: "11:30–13:30, 17:00–21:00" },
+    { day: "Sonntag", hours: "11:30–13:30, 17:00–21:00" }
   ];
 
   return (
@@ -39,10 +39,8 @@ export function ContactSection() {
                 <div>
                   <h3 className="text-lg font-medium text-foreground mb-2">Adresse</h3>
                   <p className="text-foreground/70">
-                    Pizzeria Picasso<br />
-                    Musterstraße 123<br />
-                    12345 Musterstadt<br />
-                    Deutschland
+                    Konrad-Adenauer-Straße 2<br />
+                    35745 Herborn
                   </p>
                 </div>
               </div>
@@ -63,8 +61,8 @@ export function ContactSection() {
                   <div className="space-y-1">
                     <p>
                       <span className="text-foreground/70">Telefon: </span>
-                      <a href="tel:+49123456789" className="text-secondary hover:text-secondary/80 transition-colors">
-                        +49 (0) 123 456 789
+                      <a href="tel:02772571566" className="text-secondary hover:text-secondary/80 transition-colors">
+                        02772 571566
                       </a>
                     </p>
                     <p>
